@@ -3,15 +3,14 @@
 #include <cstdlib>
 
 int main() {
-    int ny;
+    std::string ny;
     int State = true;
     int Score = 0;
     while (State == true){
         int ButtonNumber = 0;
         int Sjanse = 100;
-        int prosent = 50;
-        while (State == true){
         std::cout  << "| trykk på enter for å trykke på knappen: ";
+        while (State == true){
         srand(time(NULL));
         if (std::cin.get() == '\n'){
             ButtonNumber = ButtonNumber + 1; 
@@ -28,13 +27,10 @@ int main() {
             }
             Sjanse = 100 / ButtonNumber;
         }
-        else{
-            std::cout <<"halla!";
-        }   
         }
-        std::cout  << " | skriv in 1 for å starte på nytt: ";
+        std::cout  << " | skriv in (s) for å starte på nytt: ";
         std::cin >> ny;
-        if (ny == 1){
+        if (ny == "s"){
             State = true;
         }
         else{

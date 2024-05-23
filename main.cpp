@@ -33,7 +33,7 @@ int main() {
         if (ny == "s"){
             State = true;
         }
-        else{
+        else{ 
             std::cout <<" hade bra(:";
         }
     }
